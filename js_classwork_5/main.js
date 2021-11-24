@@ -168,8 +168,13 @@ randomArr(arr,1000);*/
 let arr = [25,36,84,41,6,20];
 
 let revArr = (arr) => {
-    let newRevArr = arr.reverse();
-    console.log(newRevArr);
+    let newRevArr = [];
+
+    for (let i = arr.length - 1, j = 0; i >= 0; i--, j++){
+        newRevArr[j] = arr[i];
+    }
+
+    return newRevArr;
 }
 
 revArr(arr);*/
